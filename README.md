@@ -35,7 +35,7 @@ return {
         -- column 100.
         vim.keymap.set("n", "<A-d>", create_section_divider)
 
-        -- Create a divider with centered text with Alt+x in insert mode with ~- as the token.
+        -- Create a divider with centered text with Alt+x in insert mode with -+- as the token.
         vim.keymap.set("n", "<A-x>", create_section_divider_centered_text)
 
         -- Do the same for insert mode
