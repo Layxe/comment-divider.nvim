@@ -1,13 +1,13 @@
 # Neovim: Comment Divider
 
-This is a plugin that allows you to create personalized comment dividers in your code. It is
+This is a plugin, that allows you, to create personalized comment dividers in your code. It is
 inspired by [section divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) and [comment divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) for Visual Studio Code.
 
 ![Comment divider example image](./docs/landing-page-image.png)
 
 ## Installation
 
-Use your favorite plugin manager to install this plugin. For example, with Lazy:
+Use your favorite plugin manager, to install this plugin. For example, with Lazy:
 
 ```lua
 return {
