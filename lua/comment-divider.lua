@@ -56,6 +56,9 @@ local function insert_divider_centered_text(divider_char, divider_end_line)
 
     -- Create half of the comment string
     local divider_half_length = math.floor(divider_length / 2)
+    -- Scale accordingly to the length of the divider character
+    divider_half_length = math.floor(divider_half_length / #divider_char)
+
     local divider             = string.rep(divider_char, divider_half_length)
 
     -- Replicate the indentation
@@ -66,6 +69,8 @@ local function insert_divider_centered_text(divider_char, divider_end_line)
 
     -- Fill in the missing chars until the end of the line
     local missing_chars = divider_end_line - #comment_string - #(comment_prefix[2]) - 1
+    -- Scale missing chars accordingly to the length of the divider character
+    missing_chars = math.floor(missing_chars / #divider_char)
 
     comment_string =
         comment_string .. string.rep(divider_char, missing_chars) .. ' ' .. comment_prefix[2]
@@ -88,6 +93,8 @@ local function insert_divider(divider_char, divider_end_line)
         -- Calculate the divider length, -1 accords for the space between the comment prefix and
         -- the divider
         local divider_length = divider_end_line - #indent - #comment_prefix - 1
+        -- Scale accordingly to the length of the divider character
+        divider_length = math.floor(divider_length / #divider_char)
 
         if not comment_prefix then
             return
@@ -105,6 +112,8 @@ local function insert_divider(divider_char, divider_end_line)
         --- the divider
         local divider_length =
             divider_end_line - #indent - #comment_prefix[1] - #comment_prefix[2] - 2
+        -- Scale according to the length of the divider character
+        divider_length = math.floor(divider_length / #divider_char)
 
         if not comment_prefix then
             return
