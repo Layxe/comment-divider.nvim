@@ -3,7 +3,7 @@
 This is a plugin that allows you to create personalized comment dividers in your code. It is
 inspired by [section divider](https://marketplace.visualstudio.com/items?itemName=dinhani.divider) and [comment divider](https://marketplace.visualstudio.com/items?itemName=stackbreak.comment-divider) for Visual Studio Code.
 
-![Comment divider example image](./docs/landing-page-image.jpg)
+![Comment divider example image](./docs/landing-page-image.png)
 
 ## Installation
 
